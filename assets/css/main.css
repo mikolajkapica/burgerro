@@ -522,9 +522,11 @@ body {
 a {
   color: #0074D9;
   text-decoration: none;
-  outline: 0; }
+  outline: 0;
+  background: none; }
   a:hover, a:focus {
-    color: #40a6ff; }
+    color: #40a6ff;
+    background: none; }
 
 .button,
 button,
