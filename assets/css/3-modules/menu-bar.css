@@ -1,0 +1,25 @@
+.menu-bar {
+  width: 1116px;
+  max-width: 90%;
+  margin: 0 auto;
+  height: 92px; }
+  .menu-bar .links {
+    float: right;
+    line-height: 100px;
+    font-size: 20px; }
+    .menu-bar .links a {
+      color: #666;
+      margin-left: 26px; }
+      .menu-bar .links a:hover {
+        color: #111111; }
+  .menu-bar img {
+    padding: 35px 0px;
+    height: 30px; }
+  .menu-bar .text {
+    float: left; }
+  .menu-bar .logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%); }
+
+/*# sourceMappingURL=menu-bar.css.map */
