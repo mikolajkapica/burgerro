@@ -592,6 +592,7 @@ input[type="button"] {
     transform: translate(-50%); }
 
 body {
+  width: 100vw;
   max-width: 100vw;
   overflow: hidden; }
 
