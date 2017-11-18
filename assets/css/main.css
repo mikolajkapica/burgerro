@@ -918,10 +918,10 @@ input[type="button"] {
       .footer .content .stores img {
         transform: scale(0.8); } }
 @media screen and (max-width: 420px) {
-  body > div.download > div > a:nth-child(2) > img {
+  div.download > div > a:nth-child(2) > img {
     width: 120px; }
 
-  body > div.download > div > a:nth-child(1) > img {
+  div.download > div > a:nth-child(1) > img {
     width: 120px; } }
 .open {
   transform: scale(1);
