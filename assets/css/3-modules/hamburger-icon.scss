@@ -1,0 +1,50 @@
+.hamburger {
+  position: absolute;
+  z-index: 101;
+  display: none;
+  float: right;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 30px;
+  margin-top: 34px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: .3s all;
+  div {
+    transition: .3s all;
+    height: 6px;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: black;
+    border-radius: 2px;
+    perspective-origin: center;
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+}
+.hamburger-open {
+  transform: rotate(90deg);
+  div {
+    background-color: white;
+  }
+}
+.hamburger-menu {
+  position: absolute;
+  z-index: 100;
+  visibility: hidden;
+  transition: .3s all;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  text-align: center;
+  display: block;
+  font-size: 30px;
+  padding-top: 40%;
+  a {
+    color: white;
+    font-weight: bold;
+  }
+}

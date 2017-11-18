@@ -1,5 +1,10 @@
-$( document ).ready(function() {
-
-  // Get started!
-
+$(document).ready(function(){
+  $(".hamburger").click(function(){
+    $(".hamburger").toggleClass("hamburger-open");
+  });
+});
+$(document).ready(function(){
+  $(".hamburger").click(function(){
+    $(".hamburger-menu").toggleClass("open");
+  });
 });

@@ -1,8 +1,3 @@
-body {
-  width: 100vw;
-  max-width: 100vw;
-  overflow: hidden;
-}
 .title-text {
   margin: 0 auto;
   margin-top: 70px;
@@ -17,7 +12,8 @@ body {
 .video {
   position: relative;
   width: 527px;
-  height: 297px;
+  max-width: 80%;
+  height: 300px;
   margin: 0 auto;
   border-radius: 30px;
   overflow: hidden;
@@ -31,7 +27,8 @@ body {
     filter: drop-shadow(0px 33px 43px rgba(0, 0, 0, 0.2));
   }
   video {
-    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
     height: 100%;
     border-radius: 20px;
     position: absolute;
@@ -87,8 +84,11 @@ body {
   }
 }
 .newsletter {
+  box-sizing: border-box;
   width: 833px;
-  height: 357px;
+  height: 100%;
+  max-width:70%;
+  padding: 50px;
   margin: 0 auto;
   margin-top: 372px;
   box-shadow: 0px 33px 43px 0px rgba(0, 0, 0, 0.08);
@@ -99,7 +99,7 @@ body {
     box-shadow: 0px 33px 43px 0px rgba(0, 0, 0, 0.16);
   }
   h1 {
-    padding-top: 67px;
+    padding-top: 20px;
     font-size: 48px;
     font-weight: 500;
     color: black;
@@ -116,20 +116,23 @@ body {
     margin-bottom: 66px;
   }
   .inputs {
-    margin-bottom: 76px;
+    overflow: hidden;
+    margin-bottom: 20px;
     text-align: center;
     input {
+    padding: 0px 10px;
     width: 400px;
     height: 45px;
     border-radius: 100px;
     background-color: black;
-    padding-left: 22px;
     border: none;
     font-size: 14px;
     color: white;
+    max-width: 90%;
     }
     a {
       button {
+      margin-top: 15px;
       width: 158px;
       height: 45px;
       border-radius: 100px;
@@ -158,17 +161,36 @@ body {
     max-width: 90%;
     margin: 0 auto;
     overflow: hidden;
-    img {
-      width: 161px;
-      height: 34px;
-      float: left;
-      margin-right: 75px;
+    display: flex;
+    justify-content: space-between;
+    .comp-info {
+      width: 83px;
+      .logo {
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+        transition: .3s all;
+        &:hover {
+          color: lighten(black, 30%);
+        }
+      }
+      img {
+        margin-top: 10px;
+        height: 20px;
+        margin-right: 7px;
+        filter: brightness(0);
+        transition: .3s all;
+        &:hover {
+          filter: brightness(1);
+        }
+      }
     }
+
+
     pre {
       float: left;
-      margin-right: 50px;
       font-size: 13px;
-      span {
+      span{
         color: black;
       }
     }
@@ -179,10 +201,106 @@ body {
         img {
           width: 135px;
           height: 40px;
-          margin-bottom: 15px;
         }
       }
     }
   }
 
+}
+@media screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+  }
+  div.menu-bar > div.links {
+    display: none;
+  }
+  .title-text {
+    max-width: 80%;
+    h1 {
+    font-size: 250%;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .newsletter {
+    max-width: 100%;
+    box-shadow: 0px 33px 43px 0px rgba(0, 0, 0, 0);
+  }
+  .about {
+    .text {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    img {
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .about {
+    .text {
+      h1 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 23px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer {
+    .content {
+      display: block;
+      .comp-info {
+        display: block;
+        margin: 0 auto;
+        .socials {
+          width: 55px;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          margin-top: 5px;
+          a {
+            img {
+              margin: 0;
+            }
+          }
+
+        }
+      }
+      pre {
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        a {
+          display: none;
+        }
+        &:nth-child(5) {
+          margin-bottom: 20px;
+        }
+      }
+      span {
+        display: block;
+      }
+      .stores {
+        margin-top: 50px;
+        float: none;
+        display: block;
+        margin: 0 auto;
+        img {
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+}
+
+.open {
+  visibility: visible;
 }
