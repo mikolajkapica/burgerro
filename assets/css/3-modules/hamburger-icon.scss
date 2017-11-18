@@ -1,23 +1,28 @@
 .hamburger {
-  position: absolute;
+  position: relative;
   z-index: 101;
   display: none;
   float: right;
   border: none;
   padding: 0;
-  width: 40px;
-  height: 30px;
-  margin-top: 34px;
-  overflow: hidden;
+  width: 35px;
+  height: 35px;
+  top: 34px;
+  background-color: black;
+  padding: 12px;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  border-radius: 100px;
   cursor: pointer;
   position: relative;
   transition: .3s all;
+  overflow-x: visible;
   div {
     transition: .3s all;
     height: 6px;
     width: 100%;
     margin-bottom: 5px;
-    background-color: black;
+    background-color: white;
     border-radius: 2px;
     perspective-origin: center;
     &:nth-child(3) {
@@ -26,9 +31,12 @@
   }
 }
 .hamburger-open {
+  background-color: white;
+  position: absolute;
+  right: 0;
   transform: rotate(90deg);
   div {
-    background-color: white;
+    background-color: black;
   }
 }
 .links2 {
@@ -42,18 +50,27 @@
   }
 }
 .hamburger-menu {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   overflow: hidden;
   transition: .3s all;
   top: 0;
   bottom: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
   text-align: center;
   display: block;
   font-size: 30px;
   a {
     font-weight: bold;
   }
+}
+.hamburger-wrapper {
+  position: fixed;
+  width: 1116px;
+  max-width: 90%;
+  margin: 0 auto;
+  top: 0;
+  height: 92px;
+  z-index: 102;
 }

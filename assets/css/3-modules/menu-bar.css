@@ -1,4 +1,5 @@
 .menu-bar {
+  position: relative;
   width: 1116px;
   max-width: 90%;
   margin: 0 auto;
@@ -25,5 +26,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%); }
+  .menu-bar .hamburger {
+    right: 0; }
 
 /*# sourceMappingURL=menu-bar.css.map */
