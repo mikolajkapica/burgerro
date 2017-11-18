@@ -647,7 +647,7 @@ input[type="button"] {
     font-weight: bold; }
 
 body {
-  margin: 0 auto; }
+  overflow-x: hidden; }
 
 .title-text {
   margin: 0 auto;
