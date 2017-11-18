@@ -665,6 +665,7 @@ input[type="button"] {
     font-weight: bold; }
 
 .hamburger-wrapper {
+  overflow: visible;
   position: fixed;
   width: 1116px;
   max-width: 90%;
