@@ -662,7 +662,7 @@ input[type="button"] {
   width: 1116px;
   max-width: 90%;
   margin: 0 auto;
-  top: 0;
+  bottom: 25px;
   height: 92px;
   z-index: 102; }
 
@@ -858,7 +858,17 @@ input[type="button"] {
   .title-text {
     max-width: 80%; }
     .title-text h1 {
-      font-size: 250%; } }
+      font-size: 250%; }
+
+  .menu-bar {
+    height: 100px; }
+    .menu-bar a {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      overflow-x: visible; }
+      .menu-bar a:nth-child(2) {
+        padding-top: 35px; } }
 @media screen and (max-width: 600px) {
   .newsletter {
     max-width: 100%;

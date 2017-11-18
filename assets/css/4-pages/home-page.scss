@@ -233,6 +233,18 @@
     font-size: 250%;
     }
   }
+  .menu-bar {
+    height: 100px;
+    a {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      overflow-x: visible;
+      &:nth-child(2) {
+        padding-top: 35px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 600px) {
   .newsletter {
