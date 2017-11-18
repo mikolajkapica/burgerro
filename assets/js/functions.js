@@ -10,11 +10,6 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
   $(".hamburger").click(function(){
-    $(".links2").toggleClass("open2");
-  });
-});
-$(document).ready(function(){
-  $(".hamburger").click(function(){
     $(".body-content").toggleClass("open3");
   });
 });

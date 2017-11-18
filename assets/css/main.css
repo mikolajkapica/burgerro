@@ -613,7 +613,10 @@ input[type="button"] {
   cursor: pointer;
   position: relative;
   transition: .3s all;
-  overflow-x: visible; }
+  overflow-x: visible;
+  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.4)); }
+  .hamburger:hover {
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5)); }
   .hamburger div {
     transition: .3s all;
     height: 6px;
@@ -629,7 +632,10 @@ input[type="button"] {
   background-color: white;
   position: absolute;
   right: 0;
-  transform: rotate(90deg); }
+  transform: rotate(90deg);
+  filter: drop-shadow(10px 0px 5px rgba(255, 255, 255, 0.4)); }
+  .hamburger-open:hover {
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.7)); }
   .hamburger-open div {
     background-color: black; }
 
@@ -642,6 +648,7 @@ input[type="button"] {
     color: white; }
 
 .hamburger-menu {
+  visibility: hidden;
   position: fixed;
   z-index: 100;
   overflow: hidden;
@@ -666,7 +673,7 @@ input[type="button"] {
   height: 92px;
   z-index: 102; }
 
-* {
+body {
   overflow-x: hidden; }
 
 .title-text {
@@ -713,11 +720,13 @@ input[type="button"] {
       transition: .3s ease-in-out; }
       .download .icons a:nth-child(2) > img {
         margin-left: 20px; }
-      .download .icons a:hover {
-        transform: translateY(-10px);
-        filter: drop-shadow(0px 33px 23px rgba(0, 0, 0, 0.2)); }
     .download .icons img {
-      width: 175px; }
+      width: 175px;
+      overflow-x: visible;
+      transition: .3s ease-in-out; }
+      .download .icons img:hover {
+        transform: translateY(-10px);
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.3)); }
 
 .about {
   opacity: 0;
@@ -925,7 +934,8 @@ input[type="button"] {
     width: 120px; } }
 .open {
   transform: scale(1);
-  opacity: 1; }
+  opacity: 1;
+  visibility: visible; }
 
 .open2 a {
   opacity: 1; }

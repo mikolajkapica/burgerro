@@ -1,4 +1,4 @@
-* {
+body {
   overflow-x: hidden; }
 
 .title-text {
@@ -45,11 +45,13 @@
       transition: .3s ease-in-out; }
       .download .icons a:nth-child(2) > img {
         margin-left: 20px; }
-      .download .icons a:hover {
-        transform: translateY(-10px);
-        filter: drop-shadow(0px 33px 23px rgba(0, 0, 0, 0.2)); }
     .download .icons img {
-      width: 175px; }
+      width: 175px;
+      overflow-x: visible;
+      transition: .3s ease-in-out; }
+      .download .icons img:hover {
+        transform: translateY(-10px);
+        filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.3)); }
 
 .about {
   opacity: 0;
@@ -257,7 +259,8 @@
     width: 120px; } }
 .open {
   transform: scale(1);
-  opacity: 1; }
+  opacity: 1;
+  visibility: visible; }
 
 .open2 a {
   opacity: 1; }
