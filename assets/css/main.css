@@ -714,7 +714,7 @@ input[type="button"] {
   justify-content: center; }
   .download .icons {
     max-width: 90%;
-    padding: 50px; }
+    padding: 50px 0px; }
     .download .icons a {
       transition: .3s ease-in-out; }
       .download .icons a:nth-child(2) > img {
