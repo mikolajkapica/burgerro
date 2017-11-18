@@ -1,5 +1,5 @@
 
-body {
+* {
   overflow-x: hidden;
 }
 .title-text {
@@ -40,12 +40,11 @@ body {
   }
 }
 .download {
-  margin-top: 50px;
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   .icons {
     max-width: 90%;
+    padding: 50px;
     a {
       transition: .3s ease-in-out;
       &:nth-child(2) > img {

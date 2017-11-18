@@ -673,7 +673,7 @@ input[type="button"] {
   height: 92px;
   z-index: 102; }
 
-body {
+* {
   overflow-x: hidden; }
 
 .title-text {
@@ -710,12 +710,11 @@ body {
     position: absolute; }
 
 .download {
-  margin-top: 50px;
-  margin-bottom: 50px;
   display: flex;
   justify-content: center; }
   .download .icons {
-    max-width: 90%; }
+    max-width: 90%;
+    padding: 50px; }
     .download .icons a {
       transition: .3s ease-in-out; }
       .download .icons a:nth-child(2) > img {
