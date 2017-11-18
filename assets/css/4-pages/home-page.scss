@@ -335,10 +335,9 @@
 }
 .open {
   transform: scale(1);
-  left: 0;
+  opacity: 1;
 }
 .open3 {
-  transform: scale(0);
 }
 .open2 a {
   opacity: 1;

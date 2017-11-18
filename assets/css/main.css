@@ -645,12 +645,12 @@ input[type="button"] {
   position: fixed;
   z-index: 100;
   overflow: hidden;
-  transition: 0.5s cubic-bezier(1, 0.02, 0.5, 0.64);
+  transition: 0.5s cubic-bezier(0.52, 0.23, 0, 1);
   height: 100vh;
-  left: -100vw;
-  transform: scale(0);
+  opacity: 0;
+  transform: scale(2);
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: black;
   text-align: center;
   display: block;
   font-size: 30px; }
@@ -925,10 +925,7 @@ input[type="button"] {
     width: 120px; } }
 .open {
   transform: scale(1);
-  left: 0; }
-
-.open3 {
-  transform: scale(0); }
+  opacity: 1; }
 
 .open2 a {
   opacity: 1; }

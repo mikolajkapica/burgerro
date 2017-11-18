@@ -52,12 +52,12 @@
   position: fixed;
   z-index: 100;
   overflow: hidden;
-  transition: .5s cubic-bezier(1,.02,.5,.64);
+  transition: .5s cubic-bezier(.52,.23,0,1);
   height: 100vh;
-  left: -100vw;
-  transform: scale(0);
+  opacity: 0;
+  transform: scale(2);
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 1);
   text-align: center;
   display: block;
   font-size: 30px;
