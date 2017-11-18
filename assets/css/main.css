@@ -639,16 +639,16 @@ input[type="button"] {
   position: absolute;
   transform: translate(-50%, -50%); }
   .links2 a {
-    opacity: 0;
     color: white; }
 
 .hamburger-menu {
   position: fixed;
   z-index: 100;
   overflow: hidden;
-  transition: .3s all;
-  top: 0;
-  bottom: 100vh;
+  transition: 0.5s cubic-bezier(1, 0.02, 0.5, 0.64);
+  height: 100vh;
+  left: -100vw;
+  transform: scale(0);
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.9);
   text-align: center;
@@ -924,8 +924,11 @@ input[type="button"] {
   body > div.download > div > a:nth-child(1) > img {
     width: 120px; } }
 .open {
-  bottom: 0;
-  top: 0; }
+  transform: scale(1);
+  left: 0; }
+
+.open3 {
+  transform: scale(0); }
 
 .open2 a {
   opacity: 1; }
@@ -935,5 +938,8 @@ input[type="button"] {
 
 .plus {
   opacity: 1; }
+
+.body-content {
+  transition: 0.8s ease-in-out; }
 
 /*# sourceMappingURL=main.css.map */

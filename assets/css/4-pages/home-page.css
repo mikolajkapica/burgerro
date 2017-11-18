@@ -256,8 +256,11 @@
   body > div.download > div > a:nth-child(1) > img {
     width: 120px; } }
 .open {
-  bottom: 0;
-  top: 0; }
+  transform: scale(1);
+  left: 0; }
+
+.open3 {
+  transform: scale(0); }
 
 .open2 a {
   opacity: 1; }
@@ -267,5 +270,8 @@
 
 .plus {
   opacity: 1; }
+
+.body-content {
+  transition: 0.8s ease-in-out; }
 
 /*# sourceMappingURL=home-page.css.map */

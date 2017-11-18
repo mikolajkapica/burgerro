@@ -13,6 +13,11 @@ $(document).ready(function(){
     $(".links2").toggleClass("open2");
   });
 });
+$(document).ready(function(){
+  $(".hamburger").click(function(){
+    $(".body-content").toggleClass("open3");
+  });
+});
 $(document).ready(function() {
     $('body').hide().fadeIn(500);
 });

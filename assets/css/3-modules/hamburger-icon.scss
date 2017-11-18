@@ -45,7 +45,6 @@
   position: absolute;
   transform: translate(-50%, -50%);
   a {
-    opacity: 0;
     color: white;
   }
 }
@@ -53,9 +52,10 @@
   position: fixed;
   z-index: 100;
   overflow: hidden;
-  transition: .3s all;
-  top: 0;
-  bottom: 100vh;
+  transition: .5s cubic-bezier(1,.02,.5,.64);
+  height: 100vh;
+  left: -100vw;
+  transform: scale(0);
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.9);
   text-align: center;
