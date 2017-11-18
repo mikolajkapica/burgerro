@@ -37,7 +37,7 @@ $news.waypoint(function (direction) {
   else {
     $news.removeClass('plus');
   }
-}, { offset: '50%' });
+}, { offset: '80%' });
 
 var $footer = $('.footer');
 
